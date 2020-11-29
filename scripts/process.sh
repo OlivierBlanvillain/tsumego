@@ -1,4 +1,4 @@
-#/!bin/bash
+#!/bin/bash
 
 cd zal
 
@@ -68,6 +68,12 @@ for i in `ls zz*.tex`; do
   s/to 192/to 180/
   s/to 202/to 190/
   s/.tex//
+  s/problem zzproblem-186-/volume 1, problem zzprob/g
+  s/problem zzproblem-187-/volume 2, problem zzprob/g
+  s/problem zzproblem-188-/volume 3, problem zzprob/g
+  s/problem zzproblem-190-/volume 4, problem zzprob/g
+  s/problem zzproblem-193-/volume 5, problem zzprob/g
+  s/problem zzproblem-194-/volume 6, problem zzprob/g
   s/problem zzprob000/problem /
   s/problem zzprob00/problem /
   s/problem zzprob0/problem /
